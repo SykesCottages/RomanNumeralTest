@@ -2,7 +2,7 @@
 
 To install this you will need PHP and Composer
 
-running ubuntu this can be installed with `sudo apt install php composer` then in the directly `composer install`
+running ubuntu this can be installed with `sudo apt install php composer` then in this directory run `composer install`
 
 # The task
 
