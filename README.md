@@ -13,3 +13,7 @@ To run the tests run `./vendor/bin/phpunit` and look at the output.
 The `toInt` function should be able to translate any Roman Numerial to the correct integer.
 
 For example `VI` should return `6` and `XX` should return `20`
+
+# Cant get phpunit running ?
+
+Included is an index file (index.php) This should run on any web server (eg MAMP, XAMP etc)
