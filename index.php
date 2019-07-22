@@ -6,7 +6,7 @@ $positiveTests = [
     'X' => 10,
     'IX' => 9,
     'V' => 5,
-    'MMX' => 2020,
+    'MMX' => 2010,
 ];
 
 $negativeTests = [
@@ -25,7 +25,7 @@ foreach ($positiveTests as $numerial => $expected) {
 ?>
 <h2>Invalid Tests</h2>
 <?php
-foreach($negativeTests as $input) {
+foreach($negativeTests as $numerial) {
     $exception = false;
     try {
         (new RomanNumeral($numerial))->toInt(); 
