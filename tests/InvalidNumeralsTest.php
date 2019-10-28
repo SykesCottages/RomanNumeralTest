@@ -10,6 +10,7 @@ class InvalidNumeralsTest extends TestCase
     /**
      * @param $numeral
      * @dataProvider badMappings
+     * @throws InvalidNumeral
      */
     public function testInvalidOutput($numeral)
     {
@@ -25,6 +26,7 @@ class InvalidNumeralsTest extends TestCase
             ['XI Something'],
             ['Something MM'],
             ['-X'],
+            ['']
         ];
     }
 }
