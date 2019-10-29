@@ -6,7 +6,10 @@ $positiveTests = [
     'X' => 10,
     'IX' => 9,
     'V' => 5,
+    'IV' => 4,
     'MMX' => 2010,
+    'III' => 3,
+    'CD' => 400
 ];
 
 $negativeTests = [
@@ -14,6 +17,7 @@ $negativeTests = [
     'XI Something',
     'Something MM',
     '-X',
+    ''
 ];
 
 ?>
