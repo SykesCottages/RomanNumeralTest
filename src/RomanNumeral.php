@@ -27,8 +27,33 @@ class RomanNumeral
      */
     public function toInt():int
     {
-        $total = 0;
 
-        return $total;
+        function romanToInteger($roman) {
+            $roman = strtoupper($roman);
+            $roman = str_split($roman);
+            $result = 0;
+            $romanValues = [
+                'M' => 1000,
+                'D' => 500,
+                'C' => 100,
+                'L' => 50,
+                'X' => 10,
+                'V' => 5,
+                'I' => 1,
+            ];
+            
+            foreach ($roman as $key => $value) {
+                if ($key < count($roman) - 1) {
+                    $next = $roman[$key + 1];
+                    if ($romanValues[$value] < $romanValues[$next]) {
+                        $result -= $romanValues[$value];
+                    } else {
+                        $result += $romanValues[$value];
+                    }
+                }
+            }
+            return $result;
+        }
+        
     }
 }
